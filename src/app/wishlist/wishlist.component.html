@@ -1,0 +1,20 @@
+
+<div class="col-lg-10 jndivisorlft"  style="padding-right: 90px;">
+    <h3>{{titulo}}</h3>
+    <hr/>
+    <div *ngIf="!wishlists">
+        Loading...
+    </div>
+    <div *ngIf="wishlists">
+        <div class="row">
+            <div class="col-lg-3" *ngFor="let wish of wishlists">
+                <img src="{{wish.url_photo}}" />
+                <div class="caption">
+                    <strong>{{wish.city}}</strong>
+                    <strong>{{wish.trips}}</strong>
+                    <p>{{wish.details}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

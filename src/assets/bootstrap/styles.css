@@ -61,6 +61,12 @@
     text-decoration: none;
 }
 
+.activado{
+    background: #042c5ddb !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
 #main {
     background: #ad9fa066;
 }
