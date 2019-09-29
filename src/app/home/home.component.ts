@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   public titulo:string;
   constructor() {
-    this.titulo = "Listado de viajes"
+    this.titulo = "Smart Filters"
    }
 
   ngOnInit() {
