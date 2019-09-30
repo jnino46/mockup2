@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   public titulo:string;
   constructor() {
-    this.titulo = "Listado de viajes"
+    this.titulo = "Smart Filters"
    }
 
   ngOnInit() {

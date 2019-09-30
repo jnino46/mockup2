@@ -1,0 +1,25 @@
+
+<div class="col-lg-10 jndivisorlft"  style="padding-right: 90px;">
+    <h3>{{titulo}}</h3>
+    <hr/>
+    <div *ngIf="!wishlists">
+        Loading...
+    </div>
+    <div *ngIf="wishlists">
+        <div class="row">
+            <div class="col-lg-3 jnwish" *ngFor="let wish of wishlists" style="width: 24%">
+                <div *ngIf="wish.url_photo" class="img_container  jndivisor">
+                    <img src="{{wish.url_photo}}" class="image_city" alt="Cinque Terre" />
+                </div>
+                <div *ngIf="!wish.url_photo">
+                    <div class="image_default"></div>
+                </div>
+                <div class="caption">
+                    <strong style="display: block" class=" jndivisor">{{wish.city}}</strong>
+                    Trips: <strong>{{wish.trips}}</strong>
+                    <p  class="jndivisor">{{wish.details}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

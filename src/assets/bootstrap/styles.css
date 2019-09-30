@@ -1,9 +1,9 @@
 #content {
-    margin-top: 30px;
+    margin-top: 10px;
     border-radius: 2px;
     background: white;
     box-shadow: 0px 2px 5px #ccc;
-    padding: 0px;
+    padding: 15px;
     overflow: hidden;
 }
 #header{
@@ -29,6 +29,7 @@
     padding-bottom: 40px;
     margin: 0px;
     background: #ad9fa066;
+    padding-right: 90px;
 }
 
 #nav ul {
@@ -46,17 +47,24 @@
     display: block;
     background: white;
     text-align: center;
-    color: black;
+    color:  #042c5ddb;
     height: 50px;
     line-height: 32px;
-    padding: 8px;
+    padding: 4px;
     transition: all 300ms;
+    line-height: 10px;
 }
 
 #nav ul li a:hover{
     background: #042c5ddb;
     color: white;
     text-decoration: none;
+}
+
+.activado{
+    background: #042c5ddb !important;
+    color: white !important;
+    text-decoration: none !important;
 }
 
 #main {
@@ -68,4 +76,114 @@
     padding-top: 10px;
     border-top: 1px solid #eee;
     color: gray;
+}
+
+.jncard{
+    display: flex;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0px 2px 5px #ccc;
+    color: gray;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+}
+
+.jnwish{
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0px 2px 5px #ccc;
+    color: gray;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 3px 3px;
+    background: #eee;
+}
+
+.jncomplet {
+    float: left;
+    width: 100%;
+    border-style: none solid none solid;
+    border-color: #ad9fa066;
+    border-width: 1px;
+    border-right-width: thin;
+    border-top: 10px;
+    height: 100%;
+}
+.icon_viaje{
+    width: 30%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.nom_prod{
+    width: 70%;
+    text-align: center;
+    padding: 0px;
+}
+
+table {
+    width: 100%
+}
+
+.jndate {
+    padding-top: 14px;
+    text-align: center;
+    line-height: normal;
+
+}
+
+.jncheck {
+    color: darkorange;
+    text-align: center;
+    padding-top: 34px;
+}
+
+.jnrow{
+    text-align: center;
+    padding: 10px;
+}
+
+.jndivisor {
+    border-style: none none solid none;
+    border-color: #ad9fa066;
+    border-width: 1px;
+    border-right-width: thin;
+    border-top: 10px;
+}
+
+.jndivisorlft {
+    border-style: none none none solid;
+    border-color: #ad9fa066;
+    border-width: 1px;
+    border-right-width: thin;
+    border-top: 10px;
+}
+
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+.toggle.ios .toggle-handle { border-radius: 20px; }
+.jntoggle {
+    padding: 15px;
+}
+
+.img_container{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image_city{
+    /*width: 100%;*/
+    height: 200px;
+    margin: 0px auto;
+    display: block;
+    border-radius: 10px;
+}
+.image_default{
+    background:  #ccc;
+    width: 100%;
+    height: 200px;
+}
+.caption{
+    padding: 6px 10px;
 }
