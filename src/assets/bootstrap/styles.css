@@ -61,6 +61,12 @@
     text-decoration: none;
 }
 
+.activado{
+    background: #042c5ddb !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
 #main {
     background: #ad9fa066;
 }
@@ -81,6 +87,17 @@
     padding-top: 14px;
     padding-bottom: 14px;
 
+}
+
+.jnwish{
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0px 2px 5px #ccc;
+    color: gray;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 3px 3px;
+    background: #eee;
 }
 
 .jncomplet {
@@ -147,4 +164,26 @@ table {
 .toggle.ios .toggle-handle { border-radius: 20px; }
 .jntoggle {
     padding: 15px;
+}
+
+.img_container{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image_city{
+    /*width: 100%;*/
+    height: 200px;
+    margin: 0px auto;
+    display: block;
+    border-radius: 10px;
+}
+.image_default{
+    background:  #ccc;
+    width: 100%;
+    height: 200px;
+}
+.caption{
+    padding: 6px 10px;
 }
