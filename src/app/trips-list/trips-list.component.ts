@@ -26,14 +26,17 @@ export class TripsListComponent implements OnInit {
     console.log('TripsList charged');
     this._tripService.getTrips().subscribe(
       result => {
-        //if(result.code != 200 )
-          //console.log(result.code);
-        //else
-          this.trips = result;
+        
+        this.trips = result;
           //console.log(result);
       },
       error =>{
-        console.log(<any>error)
+        this.trips =  [
+          {date_send:'2019-09-10 15:35:20', city_to:'Medellin (Antioquia)', city_from:'Bogota D.C', price:'$350.000'},
+          {date_send:'2019-09-10 15:35:20', city_to:'Medellin (Antioquia)', city_from:'Bogota D.C', price:'$350.000'},
+          {date_send:'2019-09-10 15:35:20', city_to:'Medellin (Antioquia)', city_from:'Bogota D.C', price:'$350.000'},
+          {date_send:'2019-09-10 15:35:20', city_to:'Medellin (Antioquia)', city_from:'Bogota D.C', price:'$350.000'},
+        ];
       }
     );
   }

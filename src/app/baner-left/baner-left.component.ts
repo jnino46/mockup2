@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./baner-left.component.css']
 })
 export class BanerLeftComponent implements OnInit {
+  public titulo : string;
+  constructor() {
+    this.titulo = "Smart Filters"
 
-  constructor() { }
+   }
 
   ngOnInit() {
   }
